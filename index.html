@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Шары с душой — Уголок радости</title>
-    
 
     <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,9 +61,9 @@
 
             <nav class="nav" id="nav" aria-label="Основная навигация">
                 <ul class="nav__list">
-                    <li><a href="#" class="nav__link">Главная</a></li>
-                    <li><a href="#" class="nav__link">Продукция</a></li>
-                    <li><a href="#" class="nav__link">Где купить</a></li>
+                    <li><a href="#hero" class="nav__link">Главная</a></li>
+                    <li><a href="#popular" class="nav__link">Продукция</a></li>
+                    <li><a href="#map" class="nav__link">Где купить</a></li>
                     <li>
                         <button class="btn btn--header">Заказать</button>
                     </li>
@@ -75,17 +74,17 @@
 
     <main>
         <!-- Герой-секция -->
-        <section class="hero" aria-label="Главный баннер">
+        <section class="hero" id="hero" aria-label="Главный баннер">
             <div class="container hero__content">
                 <div class="hero-image-wrapper">
-                    <img src="image/nadpis2.svg" class="hero-image"/>
+                    <img src="image/nadpis2.svg" class="hero-image" alt="Уголок радости — праздник в каждом шаре" />
                 </div>
-                <img src="image/buket2.png" class="hero-photo"/>
+                <img src="image/buket2.png" class="hero-photo" alt="Букет шаров" />
             </div>
         </section>
 
         <!-- Популярные предложения -->
-        <section class="popular" aria-label="Популярные предложения">
+        <section class="popular" id="popular" aria-label="Популярные предложения">
             <div class="container">
                 <div class="popular__header">
                     <h2 class="section-title">
@@ -242,7 +241,7 @@
         </section>
 
         <!-- О нас -->
-        <section class="about" aria-label="О нас">
+        <section class="about" id="about" aria-label="О нас">
             <div class="container">
                 <h2 class="section-title about__title">
                     <strong>О нас</strong>
@@ -250,7 +249,7 @@
 
                 <div class="about__top">
                     <div class="about__photo about__photo--left">
-                        <img src="image/shar.png" alt="Наши работы" />
+                        <img src="image/shary.png" alt="Наши работы" />
                     </div>
                     <div class="about__text about__text--center">
                         <p>Мы создаём воздушные букеты, которые дарят радость и делают моменты незабываемыми. Каждый шар
@@ -281,47 +280,52 @@
                 </div>
             </div>
         </section>
-        <section class="map-section" aria-label="Где нас найти">
-    <div class="container">
-        <h2 class="section-title map__title">
-            <strong>ГДЕ НАС НАЙТИ</strong>
-        </h2>
-        <div class="map__wrapper">
-            <div class="map__container">
-                <iframe 
-                    src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=222653859148" 
-                    width="100%" 
-                    height="450" 
-                    frameborder="0"
-                    allowfullscreen="true"
-                    loading="lazy"
-                    title="Карта с расположением магазина">
-                </iframe>
+
+        <!-- Где купить / Карта -->
+        <section class="map-section" id="map" aria-label="Где нас найти">
+            <div class="container">
+                <h2 class="section-title map__title">
+                    <strong>ГДЕ НАС НАЙТИ</strong>
+                </h2>
+                <div class="map__wrapper">
+                    <div class="map__container">
+                        <iframe 
+                            src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=222653859148" 
+                            width="100%" 
+                            height="450" 
+                            frameborder="0"
+                            allowfullscreen="true"
+                            loading="lazy"
+                            title="Карта с расположением магазина">
+                        </iframe>
+                    </div>
+                    <div class="map__info">
+                        <div class="map__info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Белебей, ул. Красная 134</span>
+                        </div>
+                        <div class="map__info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="map__schedule">
+                                <span>Будни: 10:00 – 19:30</span>
+                                <span>Выходные: 10:00 – 17:00</span>
+                            </div>
+                        </div>
+                        <div class="map__info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (927) 334-48-73</span>
+                        </div>
+                        <div class="map__info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>pyatochok1@yandex.ru</span>
+                        </div>
+                        <a href="https://yandex.ru/maps/org/222653859148" target="_blank" class="btn btn--map">
+                            <i class="fas fa-external-link-alt"></i> Открыть в Яндекс Картах
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="map__info">
-                <div class="map__info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>г. Москва, ул. Примерная, д. 123</span>
-                </div>
-                <div class="map__info-item">
-                    <i class="fas fa-clock"></i>
-                    <span>Ежедневно: 10:00 – 21:00</span>
-                </div>
-                <div class="map__info-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <span>+7 (927) 334-48-73</span>
-                </div>
-                <div class="map__info-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>info@ugolokradosti.ru</span>
-                </div>
-                <a href="https://yandex.ru/maps/org/222653859148" target="_blank" class="btn btn--map">
-                    Открыть в Яндекс Картах
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
 
     <!-- Футер -->
@@ -333,9 +337,9 @@
             </div>
 
             <nav class="footer__nav">
-                <a href="#">Главная</a>
-                <a href="#">Продукция</a>
-                <a href="#">Где купить</a>
+                <a href="#hero">Главная</a>
+                <a href="#popular">Продукция</a>
+                <a href="#map">Где купить</a>
             </nav>
 
             <div class="footer__social">
