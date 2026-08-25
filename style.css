@@ -961,10 +961,17 @@ button {
     color: #ff7ad5;
     font-size: 1.2rem;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .map__info-item span {
     flex: 1;
+}
+
+.map__schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .btn--map {
